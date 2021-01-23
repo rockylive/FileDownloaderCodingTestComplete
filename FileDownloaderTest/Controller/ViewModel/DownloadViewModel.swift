@@ -9,10 +9,10 @@
 import Foundation
 
 class DownloadViewModel {
-    var identifier: String
+    let identifier: String
+    let remoteFilePath: String
     var downloadStatus: DownloadStatus = .NONE
     var progress: Float = 0
-    var remoteFilePath: String
 
     init(with id: String, remotePath: String) {
         identifier = id

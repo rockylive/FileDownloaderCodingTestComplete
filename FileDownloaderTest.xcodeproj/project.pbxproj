@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C4727F0D25B75CBC004A9165 /* DownloadFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4727F0C25B75CBC004A9165 /* DownloadFileManager.swift */; };
+		C4AA8E5425B9EB030081DE29 /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AA8E5325B9EB030081DE29 /* Download.swift */; };
+		C4B4790025BB8249004EA527 /* AppResetHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B478FA25BB812E004EA527 /* AppResetHelper.swift */; };
+		C4B4790825BB8805004EA527 /* DownloadTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B4790725BB8805004EA527 /* DownloadTableViewCell.swift */; };
 		DBFDCE1422B25C5D00C94C86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFDCE1322B25C5D00C94C86 /* AppDelegate.swift */; };
 		DBFDCE1622B25C5D00C94C86 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFDCE1522B25C5D00C94C86 /* ViewController.swift */; };
 		DBFDCE1922B25C5D00C94C86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBFDCE1722B25C5D00C94C86 /* Main.storyboard */; };
@@ -16,7 +20,7 @@
 		DBFDCE3522B25E1000C94C86 /* DownloadModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFDCE3422B25E1000C94C86 /* DownloadModel.swift */; };
 		DBFDCE3722B25F3100C94C86 /* Downloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFDCE3622B25F3100C94C86 /* Downloader.swift */; };
 		DBFDCE3B22B2914C00C94C86 /* DownloadStatusUpdateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFDCE3A22B2914C00C94C86 /* DownloadStatusUpdateModel.swift */; };
-		DBFDCE4D22B2A85E00C94C86 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFDCE4C22B2A85E00C94C86 /* ViewModel.swift */; };
+		DBFDCE4D22B2A85E00C94C86 /* DownloadViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFDCE4C22B2A85E00C94C86 /* DownloadViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +34,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C4727F0C25B75CBC004A9165 /* DownloadFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadFileManager.swift; sourceTree = "<group>"; };
+		C4AA8E5325B9EB030081DE29 /* Download.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Download.swift; sourceTree = "<group>"; };
+		C4B478FA25BB812E004EA527 /* AppResetHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppResetHelper.swift; sourceTree = "<group>"; };
+		C4B4790725BB8805004EA527 /* DownloadTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadTableViewCell.swift; sourceTree = "<group>"; };
 		DBFDCE1022B25C5D00C94C86 /* FileDownloaderTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FileDownloaderTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBFDCE1322B25C5D00C94C86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBFDCE1522B25C5D00C94C86 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,7 +51,7 @@
 		DBFDCE3422B25E1000C94C86 /* DownloadModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadModel.swift; sourceTree = "<group>"; };
 		DBFDCE3622B25F3100C94C86 /* Downloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Downloader.swift; sourceTree = "<group>"; };
 		DBFDCE3A22B2914C00C94C86 /* DownloadStatusUpdateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadStatusUpdateModel.swift; sourceTree = "<group>"; };
-		DBFDCE4C22B2A85E00C94C86 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		DBFDCE4C22B2A85E00C94C86 /* DownloadViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +72,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C43FA45F25BB8C86005DD7FC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DBFDCE4C22B2A85E00C94C86 /* DownloadViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C4727F0B25B75C91004A9165 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C4727F0C25B75CBC004A9165 /* DownloadFileManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C4AA8E6325BA444E0081DE29 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DBFDCE3A22B2914C00C94C86 /* DownloadStatusUpdateModel.swift */,
+				DBFDCE3422B25E1000C94C86 /* DownloadModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C4B4790525BB87D5004EA527 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C43FA45F25BB8C86005DD7FC /* ViewModel */,
+				C4B4790625BB87EC004EA527 /* Cells */,
+				DBFDCE1522B25C5D00C94C86 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C4B4790625BB87EC004EA527 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C4B4790725BB8805004EA527 /* DownloadTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		DBFDCE0722B25C5D00C94C86 = {
 			isa = PBXGroup;
 			children = (
@@ -86,13 +137,12 @@
 			isa = PBXGroup;
 			children = (
 				DBFDCE3322B25DE800C94C86 /* FileDownloader */,
+				C4B4790525BB87D5004EA527 /* Controller */,
 				DBFDCE1322B25C5D00C94C86 /* AppDelegate.swift */,
-				DBFDCE1522B25C5D00C94C86 /* ViewController.swift */,
 				DBFDCE1722B25C5D00C94C86 /* Main.storyboard */,
 				DBFDCE1A22B25C6000C94C86 /* Assets.xcassets */,
 				DBFDCE1C22B25C6000C94C86 /* LaunchScreen.storyboard */,
 				DBFDCE1F22B25C6000C94C86 /* Info.plist */,
-				DBFDCE4C22B2A85E00C94C86 /* ViewModel.swift */,
 			);
 			path = FileDownloaderTest;
 			sourceTree = "<group>";
@@ -100,6 +150,7 @@
 		DBFDCE2722B25C6000C94C86 /* FileDownloaderTestTests */ = {
 			isa = PBXGroup;
 			children = (
+				C4B478FA25BB812E004EA527 /* AppResetHelper.swift */,
 				DBFDCE2822B25C6000C94C86 /* FileDownloaderTestTests.swift */,
 				DBFDCE2A22B25C6000C94C86 /* Info.plist */,
 			);
@@ -109,9 +160,10 @@
 		DBFDCE3322B25DE800C94C86 /* FileDownloader */ = {
 			isa = PBXGroup;
 			children = (
-				DBFDCE3422B25E1000C94C86 /* DownloadModel.swift */,
-				DBFDCE3A22B2914C00C94C86 /* DownloadStatusUpdateModel.swift */,
+				C4727F0B25B75C91004A9165 /* Services */,
+				C4AA8E6325BA444E0081DE29 /* Models */,
 				DBFDCE3622B25F3100C94C86 /* Downloader.swift */,
+				C4AA8E5325B9EB030081DE29 /* Download.swift */,
 			);
 			path = FileDownloader;
 			sourceTree = "<group>";
@@ -222,7 +274,10 @@
 				DBFDCE3722B25F3100C94C86 /* Downloader.swift in Sources */,
 				DBFDCE3B22B2914C00C94C86 /* DownloadStatusUpdateModel.swift in Sources */,
 				DBFDCE3522B25E1000C94C86 /* DownloadModel.swift in Sources */,
-				DBFDCE4D22B2A85E00C94C86 /* ViewModel.swift in Sources */,
+				C4B4790825BB8805004EA527 /* DownloadTableViewCell.swift in Sources */,
+				DBFDCE4D22B2A85E00C94C86 /* DownloadViewModel.swift in Sources */,
+				C4AA8E5425B9EB030081DE29 /* Download.swift in Sources */,
+				C4727F0D25B75CBC004A9165 /* DownloadFileManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,6 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBFDCE2922B25C6000C94C86 /* FileDownloaderTestTests.swift in Sources */,
+				C4B4790025BB8249004EA527 /* AppResetHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
